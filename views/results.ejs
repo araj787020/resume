@@ -1,0 +1,7 @@
+<%- include('header'); -%>
+<div class="" style="margin-top:200px">
+  <%  data["Search"].forEach(function(movie){%>
+      <li class="text-center text-white"> <%= movie["Title"] %>-<strong><%= movie["Year"]%></strong></li>
+  <%  })%>
+</div>
+<%- include('footer'); -%>

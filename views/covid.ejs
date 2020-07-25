@@ -1,0 +1,19 @@
+<%- include('header'); -%>
+
+<div class="text-center text-white" style="margin-top:200px;">
+  <h3 style="  font-family: 'Oleo Script', cursive; font-size:40px">Covid Updates in India</h3>
+  <% result.forEach(function(x){%>
+    <li>Country : <%= x.country %></li>
+    <li>Confirmed Case : <%= x.confirmed %></li>
+    <li>Recovered : <%= x.recovered %></li>
+    <li>Critical Case : <%= x.critical %></li>
+    <li>Death : <%= x.deaths %></li>
+    <li>Last Change : <%= x.lastChange %></li>
+    <li>Last Update : <%= x.lastUpdate %></li>
+  <% }) %>
+
+</div>
+
+
+
+<%- include('footer'); -%>
